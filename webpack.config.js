@@ -20,16 +20,18 @@ module.exports = {
     ],
   output: {
     // filename: 'bundle.js',
-    filename: '[name].bundle.js',
+    // filename: '[name].bundle.js',
+    filename: '[name].[chunkhash].js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
         rules: [
            {
-             test: /\.css$/,
+             test: /\.scss$/,
              use: [
                'style-loader',
-               'css-loader'
+               'css-loader',
+               "sass-loader"
              ]
            },
            {

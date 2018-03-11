@@ -1,7 +1,10 @@
 import _ from 'lodash';
-import './style.css';
+// import './style.css';
+import './index.scss';
 import Icon from './logo.png';
 import printMe from './print.js';
+//import 'bootstrap';
+//import 'bootstrap';
 
 function component() {
     var element = document.createElement('div');
